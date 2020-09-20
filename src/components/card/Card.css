@@ -1,0 +1,26 @@
+.container{
+    display: inline-block;
+    flex-grow: 0;
+    margin: 5px;
+}
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 200px;
+    border: solid  white;
+  }
+  
+  /* On mouse-over, add a deeper shadow */
+  .card:hover {
+    border: solid  var(--primaria);
+  }
+  
+  /* Add some padding inside the card container */
+  .container {
+    padding: 2px 16px;
+  }
+
+  .tamanho{
+    width:100%;
+  }

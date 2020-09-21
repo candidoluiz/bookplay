@@ -8,11 +8,11 @@ class Menu extends Component {
     <div className="nav">
       <Route>
         <ul>
-            <li><Link to="/teste">LIVROS</Link></li>
-            <li><a href="#news">CURSOS</a></li>
-            <li><a href="#contact">VIDEO AULAS</a></li>
-            <li><a href="#about">BANCA</a></li>
-            <li><a href="#about">AUDIO BOOKS</a></li>
+            <li><Link to="/home/livros" >LIVROS</Link></li>
+            <li><Link to="/home/cursos">CURSOS</Link></li>
+            <li><Link to="/home/videos">VIDEO AULAS</Link></li>
+            <li><Link to="/home/banca">BANCA</Link></li>
+            <li><Link to="/home/audiobooks">AUDIO BOOKS</Link></li>
         </ul>
       </Route>
     </div>

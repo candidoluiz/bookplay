@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {Route, withRouter, Link} from 'react-router-dom';
 import './Login.css';
 
 class Login extends Component {
@@ -22,7 +23,7 @@ class Login extends Component {
             </p>
             <p class="link">
             Ainda não tem conta?
-            <a href="#paracadastro">Cadastre-se</a>
+            <Link to="/cadastro">Cadastre-se</Link>
           </p>
         </form>
        </div>

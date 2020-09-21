@@ -4,16 +4,29 @@ import axios from 'axios';
 import './Card.css';
 
 class Card extends Component {
+
     state={
         livros:[]
     }
-    componentDidMount(){
-        axios.get(`https://bmain.bookplay.com.br/parceiros/6BB6F620/recrutamento/top10/acessos/3`)
+
+    componentDidUpdate() {
+
+        axios.get(`https://bmain.bookplay.com.br/parceiros/6BB6F620/recrutamento/top10/acessos/${this.props.pagina}`)
+        .then(res => {
+            const livros = res.data.data;
+            this.setState({livros});
+            console.log(this.props.pagina);
+        })
+
+    }
+    componentDidMount(){        
+        axios.get(`https://bmain.bookplay.com.br/parceiros/6BB6F620/recrutamento/top10/acessos/1`)
         .then(res => {
             const livros = res.data.data;
             this.setState({livros});
         })
     }
+
   render(){
   return (
       <div>
